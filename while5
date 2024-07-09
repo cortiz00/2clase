@@ -1,0 +1,35 @@
+#En un colegio se cargan los datos de sus estudiantes (Nombre, edad y promedio)
+#El programa debe calcular a) edad promedio b) cantidad de alumnos mayores de 30 años c) porcentaje de alumnos mayores de 30 años
+#El programa finaliza cuando lo desea el usuario
+
+suma=0
+cont=0
+mayores=0
+respuesta=input('¿Desea comenzar?(s/n):')
+while(respuesta=='s'or 'S')
+  nombre=input('Ingrese nombre del alumno:')
+  while (nombre==''):
+    nombre=input('Ingrese nombre del alumno:')
+  edad=int(input('Ingrese edad:'))
+  while(edad<10 or edad>100) 
+     edad=int(input('Ingrese edad:'))
+  promedio==float(input('Edad incorrecta. Vuelva a ingresar edad:')
+  while(promedio<1 or promedio>100)
+    promedio=float(input('Promedio inconrrecto')
+
+  suma=suma+edad
+  cont=cont+1   #cantidad total de alumnos
+  if edad >30:
+     mayores=mayores+1
+
+  respuesta=input('¿Desea ingresar otro alumno?:(s/n)')
+
+if cont>0:
+  promedio=suma/cont
+
+  print('a) La edad promedio es de:', promedio)
+  print('b) Cantidad de alumnos mayores de 30:', mayores)
+  porcentaje=mayores/cont*100
+  print('c) El porcentaje de alumnos mayores de 30 años:', porcentaje)
+else: 
+  print('No se cargaron datos')
