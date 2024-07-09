@@ -6,7 +6,7 @@ suma=0
 cont=0
 mayores=0
 respuesta=input('¿Desea comenzar?(s/n):')
-while(respuesta=='s')
+while(respuesta=='s'or 'S')
   nombre=input('Ingrese nombre del alumno:')
   edad=int(input('Ingrese edad:')
   promedio==float(input('Ingrese promedio:')
