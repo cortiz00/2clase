@@ -1,0 +1,16 @@
+#estructura while
+#Se ingresan un conjunto de números enteros. 
+#El programa debe contar cuantos son postitivos y cuántos son negativos.
+#La carga de datos finaliza cuando se ingresa un 0.
+
+positivos=0
+negativos=0
+num=int(input('Ingrese un número: '))
+while (num!=0):
+  if num>0:
+     positivos=positivos+1
+  else: 
+     negativos=negativos+1
+  num=int(input('Ingrese un número: '))
+print('Cantidad de positivos: ', positivos)
+print('Cantidad de negativos: ',negativos)
